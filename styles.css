@@ -1,0 +1,450 @@
+/* ===== RESET + HERENCIA ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== CHAT BUTTON ===== */
+
+.chat-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+/* Hover effect */
+.chat-button:hover {
+  background: #333;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.header-center {
+  display: flex;
+  gap: 25px;
+}
+
+.header-center a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+/* ===== LOGO ===== */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo-img {
+  height: 28px;
+  width: auto;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  height: 420px;
+  background: linear-gradient(120deg, #000, #333);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-content {
+  color: white;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== PRODUCTS ===== */
+.products {
+  padding: 60px 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  height: 280px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.08);
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* ===== PROMO SECTION ===== */
+
+.promo-section {
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
+.promo-card {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.promo-card-center {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: black;
+}
+
+/* Fondos */
+.promo-left {
+  background-image: url("assets/promo1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-right {
+  background-image: url("assets/promo2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-center {
+  background-image: url("assets/promo3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-content {
+  max-width: 300px;
+}
+
+.promo-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.promo-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.promo-btn {
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.promo-btn-2 {
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.promo-btn-2:hover {
+  background: gray;
+  color: black;
+  transition: 0.3s;
+}
+
+.promo-btn:hover {
+  background: black;
+  color: white;
+  transition: 0.3s;
+}
+
+/* ===== INFO SECTION ===== */
+
+.info-section {
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info-box {
+  flex: 1;
+  padding: 40px 30px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+}
+
+.info-box:last-child {
+  border-right: none;
+}
+
+.info-icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.info-box h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.info-link {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+/* ===== SOCIAL ICONS (SVG) ===== */
+
+.social-icons span {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.social-icons span:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #f7f7f7;
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-center {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .products {
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .card-img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .promo-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chat-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+  }
+
+  .info-box {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .info-box:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    height: 24px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+}
